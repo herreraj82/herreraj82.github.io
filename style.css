@@ -1,5 +1,17 @@
+:root {
+    --main-bg-color: #111D4A;
+    --main-fg-color: #ACB4D2;
+
+    --divider-width: 0.075rem;
+    --divider-style: solid;
+    --divider-color: #303E6D;
+    --divider: var(--divider-width) var(--divider-style) var(--divider-color);
+}
+
 html {
     height: 100%;
+    font-family: Helvetica, sans-serif;
+    color: var(--main-fg-color);
 }
 
 body {
@@ -8,14 +20,23 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    background-color: #0e183d;
 }
 
 header {
-    background-color: red;
+    background-color: var(--main-bg-color);
+    padding-left: 1rem;
+    border-bottom: var(--divider);
+    box-shadow:  0rem 0rem 1.25rem black;
+    text-shadow: 0rem 0rem 1rem black;
+    font-size: 0.5rem;
+}
+
+h1, h2 {
+    font-weight: lighter;
 }
 
 main {
-    background-color: lightgreen;
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -23,9 +44,19 @@ main {
 }
 
 footer {
-    background-color: lightblue;
+    background-color: var(--main-bg-color);
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: var(--divider);
 }
 
 article {
-    background-color: green;
+    border-left:  var(--divider);
+    border-right: var(--divider);
+    padding-left:  2rem;
+    padding-right: 5rem;
+    background-color: var(--main-bg-color);
+    box-shadow: 0rem 1rem 1rem  black;
 }
+
