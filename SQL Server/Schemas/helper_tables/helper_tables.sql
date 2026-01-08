@@ -1,0 +1,1 @@
+CREATE SCHEMA helper_tables;
